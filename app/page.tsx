@@ -9,7 +9,6 @@ import { useAuth } from '../context/AuthContext'; // Import useAuth hook
 
 // Define your timetable data (using the revised schedules)
 const collegeDayTasks: TimetableEntry[] = [
-  { id: 'c1', time: '05:30 AM - 6:00 AM', description: 'DSA Session 1 (Fresh Start!)', category: 'DSA', isCompleted: false, isCoreTask: true },
   { id: 'c2', time: '6:00 AM - 7:30 AM', description: 'Running / Exercise', category: 'Exercise', isCompleted: false, isCoreTask: false },
   { id: 'c3', time: '7:30 AM - 8:00 AM', description: 'Freshen Up & Breakfast', category: 'Freshen Up', isCompleted: false, isCoreTask: false },
   { id: 'c4', time: '8:00 AM - 9:00 AM', description: 'CS Fundamentals', category: 'CS Fundamentals', isCompleted: false, isCoreTask: true },
@@ -27,19 +26,18 @@ const collegeDayTasks: TimetableEntry[] = [
 ];
 
 const noCollegeDayTasks: TimetableEntry[] = [
-  { id: 'nc1', time: '05:30 AM - 6:00 AM', description: 'DSA Session 1 (Fresh Start!)', category: 'DSA', isCompleted: false, isCoreTask: true },
   { id: 'nc2', time: '6:00 AM - 7:30 AM', description: 'Running / Exercise', category: 'Exercise', isCompleted: false, isCoreTask: false },
   { id: 'nc3', time: '7:30 AM - 8:00 AM', description: 'Freshen Up & Breakfast (Includes Bath)', category: 'Freshen Up', isCompleted: false, isCoreTask: false },
   { id: 'nc4', time: '8:00 AM - 10:30 AM', description: 'CS Fundamentals', category: 'CS Fundamentals', isCompleted: false, isCoreTask: true },
   { id: 'nc5', time: '10:30 AM - 11:00 AM', description: 'Short Break', category: 'Break', isCompleted: false, isCoreTask: false },
-  { id: 'nc6', time: '11:00 AM - 1:30 PM', description: 'DSA Session 2 (Strong Morning Block)', category: 'DSA', isCompleted: false, isCoreTask: true },
+  { id: 'nc6', time: '11:00 AM - 1:30 PM', description: 'DSA Session 1 (Strong Morning Block)', category: 'DSA', isCompleted: false, isCoreTask: true }, // Changed to Session 1
   { id: 'nc7', time: '1:30 PM - 2:30 PM', description: 'Lunch', category: 'Lunch', isCompleted: false, isCoreTask: false },
-  { id: 'nc8', time: '2:30 PM - 4:30 PM', description: 'DSA Session 3 (Middle Focus)', category: 'DSA', isCompleted: false, isCoreTask: true },
+  { id: 'nc8', time: '2:30 PM - 4:30 PM', description: 'DSA Session 2 (Middle Focus)', category: 'DSA', isCompleted: false, isCoreTask: true }, // Changed to Session 2
   { id: 'nc9', time: '4:30 PM - 5:15 PM', description: 'Project Review on GitHub', category: 'Project Review', isCompleted: false, isCoreTask: true },
   { id: 'nc10', time: '5:15 PM - 6:00 PM', description: 'Revision / Interview Prep / Aptitude', category: 'Revision', isCompleted: false, isCoreTask: true },
   { id: 'nc11', time: '6:00 PM - 7:00 PM', description: 'Evening Break / Personal Time / Hobbies', category: 'Personal Time', isCompleted: false, isCoreTask: false },
   { id: 'nc12', time: '7:00 PM - 8:00 PM', description: 'Dinner', category: 'Dinner', isCompleted: false, isCoreTask: false },
-  { id: 'nc13', time: '8:00 PM - 11:00 PM', description: 'DSA Session 4 / Deep Dive', category: 'DSA', isCompleted: false, isCoreTask: true },
+  { id: 'nc13', time: '8:00 PM - 11:00 PM', description: 'DSA Session 3 / Deep Dive', category: 'DSA', isCompleted: false, isCoreTask: true }, // Changed to Session 3
   { id: 'nc14', time: '11:00 PM onwards', description: 'Sleep', category: 'Sleep', isCompleted: false, isCoreTask: false },
 ];
 
